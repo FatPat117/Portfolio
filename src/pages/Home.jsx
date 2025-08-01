@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Home() {
-        return <div className="bg-primary-foreground">Home</div>;
+        return <div className="">Home</div>;
 }
