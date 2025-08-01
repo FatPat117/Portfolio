@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import StarBackground from "../components/StarBackground";
 import ThemeToggle from "../components/ThemeToggle";
 export default function PageLayout() {
         return (
@@ -7,7 +8,7 @@ export default function PageLayout() {
                         {/* Theme Toggle */}
                         <ThemeToggle />
                         {/* Background Effects */}
-
+                        <StarBackground />
                         {/* Navbar */}
 
                         {/* Main content */}

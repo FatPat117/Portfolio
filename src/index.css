@@ -36,7 +36,7 @@
                         opacity: 1;
                 }
                 50% {
-                        opacity: 0.8;
+                        opacity: 0.5;
                 }
         }
         @keyframes fade-in {
@@ -51,14 +51,14 @@
         }
         @keyframes meteor {
                 0% {
-                        transform: rotate(215deg) translateX(0);
+                        transform: rotate(215deg) translateX(20px);
                         opacity: 1;
                 }
                 70% {
                         opacity: 1;
                 }
                 100% {
-                        transform: rotate(215deg) translateX(-500px);
+                        transform: rotate(215deg) translateX(-540px);
                         opacity: 0;
                 }
         }
