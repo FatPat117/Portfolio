@@ -13,7 +13,9 @@ export default function PageLayout() {
                         {/* Navbar */}
                         <Navbar />
                         {/* Main content */}
-                        <Outlet />
+                        <main>
+                                <Outlet />
+                        </main>
 
                         {/* Footer */}
                 </div>
