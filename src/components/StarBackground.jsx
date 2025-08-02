@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 
 // star:{ id, size, x, y, opacity, animationDuration}
 // meteor:{id , size ,x ,y , delay, animationDuration}
-export default function StarBackground() {
+function StarBackground() {
         const [stars, setStars] = useState([]);
         const [meteors, setMeteors] = useState([]);
 
         const generateStars = () => {
-                const numberOfStars = Math.floor((window.innerWidth * window.innerHeight) / 3000);
+                const numberOfStars = Math.floor((window.innerWidth * window.innerHeight) / 8000);
 
                 const newStars = [];
 
@@ -31,13 +31,13 @@ export default function StarBackground() {
         };
 
         const generateMeteors = () => {
-                const numberOfMeteors = Math.floor((window.innerWidth * window.innerHeight) / 40000);
+                const numberOfMeteors = Math.floor((window.innerWidth * window.innerHeight) / 120000);
                 const newMeteors = [];
 
                 for (let i = 0; i < numberOfMeteors; i++) {
                         const size = Math.random() * 2 + 1;
-                        const x = Math.random() * 100;
-                        const y = Math.random() * 20;
+                        const x = Math.random() * 70;
+                        const y = Math.random() * 30;
                         const delay = Math.random() * 15;
                         const animationDuration = Math.random() * 3 + 2;
 
@@ -106,3 +106,5 @@ export default function StarBackground() {
                 </div>
         );
 }
+
+export default memo(StarBackground);

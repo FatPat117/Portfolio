@@ -18,7 +18,7 @@ export default function ThemeToggle() {
         }, [isDarkMode]);
         return (
                 <button
-                        className="cursor-pointer fixed max-sm:hidden top-4 right-5 p-2 rounded transition-colors duration-300 focus:outline-none"
+                        className="cursor-pointer fixed max-sm:hidden top-4 right-5 p-2 rounded transition-colors duration-500 focus:outline-none z-100"
                         onClick={toggleTheme}
                 >
                         {isDarkMode ? (
